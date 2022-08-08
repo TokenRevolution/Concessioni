@@ -4,9 +4,11 @@
 			<style>
 				body{
 				border-radius: 20px 20px 20px 20px;
+				background: linear-gradient(90deg, rgba(58,179,180,1) 20%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 83%);
+				background-size: cover;
 				}
 				#superior{
-				background-image: url(https://t1.pixers.pics/img-1fb6f67c/poster-vista-dall-alto-aerea-sulla-spiaggia-di-miami-ombrelli-sabbia-e-mare.jpg?H4sIAAAAAAAAA3WOTW6EMAyFrwMSYIfUJHCD2c0NkJN4prT8KWHaUU_f0KrLygvbz3r-HjzWxDcBL-shEZYphFngNs15S0OUNH1JgZXuqRyyOheIWA7bh0Qftz1faqXbquuwotaWwydn38LxvXg9jj0NAEk3-_TMz3LzCfySoEVlAC1Qb9mLC6ZX3I57nQ5eA8dQG6zNk7DZ13uFZ5V_SQxiZc4ER5yWIkfaMu0o3vZ7Cf8Qf2fILrheQCugk_zDP8XxetGKLPVoaeysNUqxMAmZ4Jg7rx0HTS0pJ6JGcoad3EJvXvp2bL4BGd9mHT4BAAA=);
+				background-image: url(spiaggia.png);
 				background-position-x: center;
 				background-position-y: bottom;
 				background-repeat: no-repeat;
@@ -14,7 +16,6 @@
 				height: 80%;
 				}
 				table, td{
-				border: 1px solid black;
 				border-collapse: collapse;
 				}
 				table{
@@ -30,7 +31,7 @@
 				}
 				div {
 				height: 30%;
-				background: lightblue;
+		        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 				border-radius: 20px 20px 20px 20px;
 				}
 				button{
@@ -43,6 +44,10 @@
 				width: auto;
 				background: green;
 				height: auto;
+				}
+				p{
+				font-size: 1em;
+				margin-bottm: -5px;
 				}
 			</style>
 			<script>
@@ -68,29 +73,36 @@
 				  console.log(quant.value)
                   document.getElementById("sommai").innerHTML = sommai;
 				};
+				function clear(){
+				  			var clicks = 0;
+							var tot = 0;
+							var rendimento = 0;
+							var percent = 0;
+							var sommai = 0;
+							const r = 100;
+				  document.getElementById("clicks").innerHTML = 0;
+				  document.getElementById("rendimento").innerHTML = 0;
+				  document.getElementById("percent").innerHTML = 0;
+				  document.getElementById("sommai").innerHTML = 0;
+				}
 			</script>
-			<script>
-		const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-		const account = accounts[0];
-
-
-		ethereumButton.addEventListener('click', () => {
-		  getAccount();
-		});
-
-		async function getAccount() {
-		  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-		  const account = accounts[0];
-		  showAccount.innerHTML = account;
-		}
-
-	</script>
 	</head>
 	<body>
-	<div id="connection" style="text-align: center; height: 10%; background: lightblue;">
-		<button style="width: auto;background: green;height: auto;" class="enableEthereumButton">Enable Ethereum</button>
-		<h2>Account: <span class="showAccount"></span></h2>
+	<div id="connection" style="text-align: center; height: 10%; background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); box-shadow: 2px 2px;">
+	<script>
+	const ethereumButton = document.querySelector('.enableEthereumButton');
+		ethereumButton.addEventListener('click', () => {
+		  //Will Start the metamask extension
+		  ethereum.request({ method: 'eth_requestAccounts' });
+		});
 
+	</script>
+	<button class="diff" class="enableEthereumButton" style="margin-top: 2%;"> Connect Wallet </button>
+	</div>
+	<div id="middle" style="text-align:center; background: none; height: 20%;">
+	<br><br>
+	<h1>Concessione balneare, valore del metro quadro € 100</h1>
+	<br><br>
 	</div>
 	<div id="superior">
 		<table>
@@ -109,9 +121,12 @@
 			<tr><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button></td></tr>
 			<tr><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button></td></tr>
 			<tr><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button><td onclick="javascript:this.style.background = 'red';"><button type="button" onClick="onClick(); this.disabled = true;"></button></td></tr>
-        </table>
+		</table>
+		        	<hr>
 	</div>
-		<div id="acquisto" style="float:left; width:30%; border: 1px solid black; text-align:center; padding: 3%; margin-right: 0.5%;">
+	<br>
+	<br>
+		<div id="acquisto" style="box-shadow: 2px 2px; float:left; width:30%; border: 1px solid black; text-align:center; padding: 3%; margin-right: 0.5%; margin-left: 0.5%;">
 			<p>Inserire quantià di tiles che si vuole acquistare</p>
 			<input id="quant" type="number" value="0" onchange="change()">
 			<p> Per acquistare questa quantità si necessita di: </p>
@@ -120,7 +135,7 @@
 			<br>
 			<button class="diff" onclick="clear()">Clear All</button>
 		</div>
-		<div id="simulazione" style="float:left; width:30%; border: 1px solid black; text-align:center; padding: 3%; margin-right: 0.5%">	
+		<div id="simulazione" style="box-shadow:2px 2px; float:left; width:30%; border: 1px solid black; text-align:center; padding: 3%; margin-right: 0.5%">	
 			<p style="margin-top: -5%">Capitale Investito</p>
 			<a id="clicks">0</a>
 			<p>Capitale ottenuto</p>
@@ -129,12 +144,27 @@
 			<a id="percent">0</a>
 			<p>Ottieni informazioni</p>
 		</div>
-		<div id="paga" style="float: left; width:20%; border: 1px solid black; text-align:center; padding: 3%;">
+		<div id="paga" style="float: left; width:20%; border: 1px solid black; text-align:center; padding: 3%; box-shadow: 2px 2px;">
 			<button class="diff"> Conferma e Paga </button>	
+			<br>
+			<br>
+			<br>
+			<img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" width="20%;"/ style="float:left; margin-right: 2%;">
+			<img src="https://cdn2.iconfinder.com/data/icons/shopping-online-e-commerce-store/512/visa-512.png" width="20%;"/ style="float:left;  margin-right: 2%;">
+			<img src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-icon.png" width="20%;"/ style="float:left;  margin-right: 2%;">
+			<img src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Binance-Coin-BNB-icon.png" width="20%;"/ style="float:left;  margin-right: 2%;">
+			
+			
 		</div>
 		<div class="empty_space" style="height:50%; background: none;">
 		</div>
-		<div id="progresso" style="border: 1px solid black; height: auto;">
+		<div id="progresso" style="box-shadow: 2px 2px; border: 1px solid black; height: auto; text-align: center;">
+		<br>
+		<br>
+		<span id="progress_bar" style="margin-left: 35%; width: 25%; background: red; float:left; height: 2%;">
+		</span>
+		<span id="empty_bar" style="width: 10%; background: green; float:left; height: 2%;">
+		</span>
 		<p style="margin-left: 5%; margin-top: 3.5%;">Numero dei contributori: X </p>
 		<p style="margin-left: 5%;">Totale fondi raccolit: Y </p>
 		<p style="margin-left: 5%;">Obbiettivo da raggiungere: Z</p>
