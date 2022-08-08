@@ -68,25 +68,11 @@
 				  console.log(quant.value)
                   document.getElementById("sommai").innerHTML = sommai;
 				};
-				function clear(){
-				  			var clicks = 0;
-							var tot = 0;
-							var rendimento = 0;
-							var percent = 0;
-							var sommai = 0;
-							const r = 100;
-				  document.getElementById("clicks").innerHTML = 0;
-				  document.getElementById("rendimento").innerHTML = 0;
-				  document.getElementById("percent").innerHTML = 0;
-				  document.getElementById("sommai").innerHTML = 0;
-				}
 			</script>
-	</head>
-	<body>
-	<div id="connection" style="text-align: center; height: 10%; background: lightblue;">
-	<script>
-			const ethereumButton = document.querySelector('.enableEthereumButton');
-		const showAccount = document.querySelector('.showAccount');
+			<script>
+		const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+		const account = accounts[0];
+
 
 		ethereumButton.addEventListener('click', () => {
 		  getAccount();
@@ -99,6 +85,9 @@
 		}
 
 	</script>
+	</head>
+	<body>
+	<div id="connection" style="text-align: center; height: 10%; background: lightblue;">
 		<button style="width: auto;background: green;height: auto;" class="enableEthereumButton">Enable Ethereum</button>
 		<h2>Account: <span class="showAccount"></span></h2>
 
