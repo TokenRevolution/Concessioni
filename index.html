@@ -85,14 +85,22 @@
 	<body>
 	<div id="connection" style="text-align: center; height: 10%; background: lightblue;">
 	<script>
-	const ethereumButton = document.querySelector('.enableEthereumButton');
+			const ethereumButton = document.querySelector('.enableEthereumButton');
+		const showAccount = document.querySelector('.showAccount');
+
 		ethereumButton.addEventListener('click', () => {
-		  //Will Start the metamask extension
-		  ethereum.request({ method: 'eth_requestAccounts' });
+		  getAccount();
 		});
 
+		async function getAccount() {
+		  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+		  const account = accounts[0];
+		  showAccount.innerHTML = account;
+		}
+
 	</script>
-	<button style="	width: auto;background: green;height: auto;" class="enableEthereumButton" style="margin-top: 2%;"> Connect Wallet </button>
+		<button style="width: auto;background: green;height: auto;" class="enableEthereumButton">Enable Ethereum</button>
+		<h2>Account: <span class="showAccount"></span></h2>
 
 	</div>
 	<div id="superior">
